@@ -1211,17 +1211,17 @@
         class CombinedForm {
             constructor() {
                 // Константы из формы Опер
-                this.n8nWebhookUrl = 'https://tunnel.itrz.ru/webhook/get-data-xtz';
-                this.saveWebhookUrl = 'https://tunnel.itrz.ru/webhook/save-production-xtz';
-               // this.downtimeUrl = 'https://tunnel.itrz.ru/webhook/get-downtime-ceh';
-              //  this.wasteReasonsUrl = 'https://tunnel.itrz.ru/webhook/get-waste-reasons-ceh';
-                this.spravkaUrl = 'https://tunnel.itrz.ru/webhook/get-spravka-data_xtz';
+                this.n8nWebhookUrl = 'https://esz-polyplastic.cloudpub.ru/webhook/get-data-xtz';
+                this.saveWebhookUrl = 'https://esz-polyplastic.cloudpub.ru/webhook/save-production-xtz';
+               // this.downtimeUrl = 'https://esz-polyplastic.cloudpub.ru/webhook/get-downtime-ceh';
+              //  this.wasteReasonsUrl = 'https://esz-polyplastic.cloudpub.ru/webhook/get-waste-reasons-ceh';
+                this.spravkaUrl = 'https://esz-polyplastic.cloudpub.ru/webhook/get-spravka-data_xtz';
                 
                 // Константы из формы ВИК
-                this.N8N_WEBHOOK_URL = 'https://tunnel.itrz.ru/webhook/save-otk-check-xtz';
-                this.TABLE_GP_WEBHOOK_URL = 'https://tunnel.itrz.ru/webhook/get-data-xtz';
-                this.NORMS_WEBHOOK_URL = 'https://tunnel.itrz.ru/webhook/get-norms';
-                this.PROGRESS_WEBHOOK_URL = 'https://tunnel.itrz.ru/webhook/check-otk-progress-xtz';
+                this.N8N_WEBHOOK_URL = 'https://esz-polyplastic.cloudpub.ru/webhook/save-otk-check-xtz';
+                this.TABLE_GP_WEBHOOK_URL = 'https://esz-polyplastic.cloudpub.ru/webhook/get-data-xtz';
+                this.NORMS_WEBHOOK_URL = 'https://esz-polyplastic.cloudpub.ru/webhook/get-norms';
+                this.PROGRESS_WEBHOOK_URL = 'https://esz-polyplastic.cloudpub.ru/webhook/check-otk-progress-xtz';
                 
                 this.allData = [];
                 this.employees = [];
@@ -3473,7 +3473,7 @@
 
             async loadFormulasFromWebhook() {
                 try {
-                    const response = await fetch('https://tunnel.itrz.ru/webhook/get-formulas');
+                    const response = await fetch('https://esz-polyplastic.cloudpub.ru/webhook/get-formulas');
                     if (response.ok) {
                         const result = await response.json();
                         if (result.success && result.formulas) {
